@@ -1,0 +1,20 @@
+* {
+    color: #fff;
+    margin: 0;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.App > img {
+    width: 80vw;
+}
+
+.nav-bar h2>span {
+    font-family: 'Work_Sans_ExtraBold';
+    color: #2362DC !important;
+}
+

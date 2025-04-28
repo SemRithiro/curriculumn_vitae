@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Work_Sans";
+  src: url(./assets/fonts/Work_Sans/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Work_Sans_ExtraBold";
+  src: url(./assets/fonts/Work_Sans/static/WorkSans-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Suwannaphum-regular";
+  src: url(./assets/fonts/Suwannaphum/Suwannaphum-Regular.ttf);
+}
+
+* {
+  font-family: "Work_Sans", "Suwannaphum-regular";
+}
+
+body {
+  background-color: #1C1F24;
+}
