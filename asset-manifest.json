@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/SemRithiro/portfolio/static/css/main.1a97d341.css",
-    "main.js": "/SemRithiro/portfolio/static/js/main.f84f1f43.js",
-    "static/js/453.1407b060.chunk.js": "/SemRithiro/portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/profile.jpg": "/SemRithiro/portfolio/static/media/profile.5f43727709f097ae75e7.jpg",
-    "static/media/WorkSans-ExtraBold.ttf": "/SemRithiro/portfolio/static/media/WorkSans-ExtraBold.7d6257f41a119dd7288d.ttf",
-    "static/media/WorkSans-SemiBold.ttf": "/SemRithiro/portfolio/static/media/WorkSans-SemiBold.6059d691b0223afc6cc5.ttf",
-    "static/media/WorkSans-Regular.ttf": "/SemRithiro/portfolio/static/media/WorkSans-Regular.7c5aca8a8c320a8df026.ttf",
-    "static/media/Suwannaphum-Regular.ttf": "/SemRithiro/portfolio/static/media/Suwannaphum-Regular.f12ef4eb7b147921ff2e.ttf",
-    "static/media/Oswald-Regular.ttf": "/SemRithiro/portfolio/static/media/Oswald-Regular.31bce04a1ae8549b1464.ttf",
-    "index.html": "/SemRithiro/portfolio/index.html",
-    "main.1a97d341.css.map": "/SemRithiro/portfolio/static/css/main.1a97d341.css.map",
-    "main.f84f1f43.js.map": "/SemRithiro/portfolio/static/js/main.f84f1f43.js.map",
-    "453.1407b060.chunk.js.map": "/SemRithiro/portfolio/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.55b9b36d.css",
+    "main.js": "/portfolio/static/js/main.56f6d30d.js",
+    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.5f43727709f097ae75e7.jpg",
+    "static/media/WorkSans-ExtraBold.ttf": "/portfolio/static/media/WorkSans-ExtraBold.7d6257f41a119dd7288d.ttf",
+    "static/media/WorkSans-SemiBold.ttf": "/portfolio/static/media/WorkSans-SemiBold.6059d691b0223afc6cc5.ttf",
+    "static/media/WorkSans-Regular.ttf": "/portfolio/static/media/WorkSans-Regular.7c5aca8a8c320a8df026.ttf",
+    "static/media/Suwannaphum-Regular.ttf": "/portfolio/static/media/Suwannaphum-Regular.f12ef4eb7b147921ff2e.ttf",
+    "static/media/Oswald-Regular.ttf": "/portfolio/static/media/Oswald-Regular.31bce04a1ae8549b1464.ttf",
+    "index.html": "/portfolio/index.html",
+    "main.55b9b36d.css.map": "/portfolio/static/css/main.55b9b36d.css.map",
+    "main.56f6d30d.js.map": "/portfolio/static/js/main.56f6d30d.js.map",
+    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a97d341.css",
-    "static/js/main.f84f1f43.js"
+    "static/css/main.55b9b36d.css",
+    "static/js/main.56f6d30d.js"
   ]
 }
