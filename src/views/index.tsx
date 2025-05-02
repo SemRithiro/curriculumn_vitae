@@ -56,7 +56,7 @@ export default function Index() {
 				</VStack>
 				<VStack flex='1' p='5'>
 					<HStack flexDirection={{ base: 'column', sm: 'row' }} w='100%' alignContent='space-between' mt='7'>
-						<VStack flex='1.5' alignItems='start' gap='0'>
+						<VStack flex='1.5' w='100%' alignItems='start' gap='0'>
 							<Text fontFamily='Oswald-regular' fontSize='2xl'>
 								{pcv.first_name.toUpperCase()}
 							</Text>
