@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.55b9b36d.css",
-    "main.js": "/portfolio/static/js/main.bd4f413b.js",
-    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/profile.jpg": "/portfolio/static/media/profile.5f43727709f097ae75e7.jpg",
-    "static/media/WorkSans-ExtraBold.ttf": "/portfolio/static/media/WorkSans-ExtraBold.7d6257f41a119dd7288d.ttf",
-    "static/media/WorkSans-SemiBold.ttf": "/portfolio/static/media/WorkSans-SemiBold.6059d691b0223afc6cc5.ttf",
-    "static/media/WorkSans-Regular.ttf": "/portfolio/static/media/WorkSans-Regular.7c5aca8a8c320a8df026.ttf",
-    "static/media/Suwannaphum-Regular.ttf": "/portfolio/static/media/Suwannaphum-Regular.f12ef4eb7b147921ff2e.ttf",
-    "static/media/Oswald-Regular.ttf": "/portfolio/static/media/Oswald-Regular.31bce04a1ae8549b1464.ttf",
-    "index.html": "/portfolio/index.html",
-    "main.55b9b36d.css.map": "/portfolio/static/css/main.55b9b36d.css.map",
-    "main.bd4f413b.js.map": "/portfolio/static/js/main.bd4f413b.js.map",
-    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/curriculumn_vitae/static/css/main.f6b88e78.css",
+    "main.js": "/curriculumn_vitae/static/js/main.523d19ae.js",
+    "static/js/453.b05236e1.chunk.js": "/curriculumn_vitae/static/js/453.b05236e1.chunk.js",
+    "static/media/profile.jpg": "/curriculumn_vitae/static/media/profile.4dff70d7c52724214088.jpg",
+    "static/media/WorkSans-ExtraBold.ttf": "/curriculumn_vitae/static/media/WorkSans-ExtraBold.7d6257f41a119dd7288d.ttf",
+    "static/media/WorkSans-SemiBold.ttf": "/curriculumn_vitae/static/media/WorkSans-SemiBold.6059d691b0223afc6cc5.ttf",
+    "static/media/WorkSans-Regular.ttf": "/curriculumn_vitae/static/media/WorkSans-Regular.7c5aca8a8c320a8df026.ttf",
+    "static/media/Suwannaphum-Regular.ttf": "/curriculumn_vitae/static/media/Suwannaphum-Regular.f12ef4eb7b147921ff2e.ttf",
+    "static/media/Oswald-Regular.ttf": "/curriculumn_vitae/static/media/Oswald-Regular.31bce04a1ae8549b1464.ttf",
+    "index.html": "/curriculumn_vitae/index.html",
+    "main.f6b88e78.css.map": "/curriculumn_vitae/static/css/main.f6b88e78.css.map",
+    "main.523d19ae.js.map": "/curriculumn_vitae/static/js/main.523d19ae.js.map",
+    "453.b05236e1.chunk.js.map": "/curriculumn_vitae/static/js/453.b05236e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55b9b36d.css",
-    "static/js/main.bd4f413b.js"
+    "static/css/main.f6b88e78.css",
+    "static/js/main.523d19ae.js"
   ]
 }
