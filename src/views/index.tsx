@@ -9,8 +9,8 @@ import { personal_curriculumn_vitae as pcv } from '../constants/data';
 export default function Index() {
 	return (
 		<Flex w='100%' justifyContent='center' p='5'>
-			<Flex bgColor='white' w='210mm' h='297mm' borderRadius='md' shadow='2xl'>
-				<VStack w='70mm' bgColor='#434244' p='5'>
+			<Flex flexDirection={{ base: 'column', sm: 'row' }} bgColor='white' w='210mm' borderRadius='md' shadow='2xl'>
+				<VStack w={{ base: '100%', sm: '70mm' }} bgColor='#434244' p='5'>
 					<Image h='40mm' aspectRatio='square' src={Profile} borderRadius='50%' mt='2' />
 					<VStack w='100%' align='start' mt='3'>
 						<Text color='white'>ABOUT ME</Text>
@@ -55,7 +55,7 @@ export default function Index() {
 					</VStack>
 				</VStack>
 				<VStack flex='1' p='5'>
-					<HStack w='100%' alignContent='space-between' mt='7'>
+					<HStack flexDirection={{ base: 'column', sm: 'row' }} w='100%' alignContent='space-between' mt='7'>
 						<VStack flex='1.5' alignItems='start' gap='0'>
 							<Text fontFamily='Oswald-regular' fontSize='2xl'>
 								{pcv.first_name.toUpperCase()}
@@ -146,7 +146,7 @@ export default function Index() {
 							SKILLS
 						</Text>
 						<Separator w='100%' variant='solid' />
-						<SimpleGrid w='100%' columns={2} gap={4}>
+						<SimpleGrid w='100%' columns={{ base: 1, sm: 2 }} gap={4}>
 							{pcv.skills.length > 0 &&
 								pcv.skills.map((skill) => (
 									<Progress.Root min={0} max={100} value={skill.value} colorPalette='green' variant='outline' size='sm' shape='rounded'>
@@ -163,7 +163,7 @@ export default function Index() {
 							LANGUAGES
 						</Text>
 						<Separator w='100%' variant='solid' />
-						<SimpleGrid w='100%' columns={2} gap='4'>
+						<SimpleGrid w='100%' columns={{ base: 1, sm: 2 }} gap='4'>
 							{pcv.languages.length > 0 &&
 								pcv.languages.map((language) => (
 									<Progress.Root min={0} max={100} value={language.value} colorPalette='green' variant='outline' size='sm' shape='rounded'>
