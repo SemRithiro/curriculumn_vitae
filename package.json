@@ -1,6 +1,6 @@
 {
-  "name": "portfolio",
-  "homepage": "https://semrithiro.github.io/portfolio",
+  "name": "curriculumn_vitae",
+  "homepage": "https://semrithiro.github.io/curriculumn_vitae",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
