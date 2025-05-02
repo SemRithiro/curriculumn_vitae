@@ -5,9 +5,9 @@ import Index from './views';
 
 export default function Router() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename='/basename'>
 			<Routes>
-				<Route path='/portfolio' element={<Index />} />
+				<Route path='/' element={<Index />} />
 			</Routes>
 		</BrowserRouter>
 	);
