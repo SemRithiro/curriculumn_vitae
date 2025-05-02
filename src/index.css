@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: "Work_Sans_SemiBold";
+  src: url(./assets/fonts/Work_Sans/static/WorkSans-SemiBold.ttf);
+}
+
+@font-face {
   font-family: "Work_Sans_ExtraBold";
   src: url(./assets/fonts/Work_Sans/static/WorkSans-ExtraBold.ttf);
 }
@@ -13,10 +18,11 @@
   src: url(./assets/fonts/Suwannaphum/Suwannaphum-Regular.ttf);
 }
 
-* {
-  font-family: "Work_Sans", "Suwannaphum-regular";
+@font-face {
+  font-family: "Oswald-regular";
+  src: url(./assets/fonts/Oswald/static/Oswald-Regular.ttf);
 }
 
 body {
-  background-color: #1C1F24;
+  background-color: #666666;
 }

@@ -1,14 +1,14 @@
 import React from 'react';
+
+import {Provider as ChakraProvider} from './components/ui/provider';
+
 import './App.css';
+import Router from './router';
 
-import Index from './views';
-
-function App() {
-  return (
-    <div className="App">
-      <Index/>
-    </div>
-  );
+export default function App() {
+    return (
+        <ChakraProvider>
+            <Router />
+        </ChakraProvider>
+    );
 }
-
-export default App;
