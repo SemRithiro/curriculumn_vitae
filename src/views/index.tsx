@@ -205,7 +205,7 @@ function CVTemplate({ personalData, printRef }: any) {
 					</Timeline.Root>
 				</VStack>
 				<VStack w='100%' alignItems='start'>
-					<Text fontSize='sm' fontFamily='Work_Sans_SemiBold'>
+					<Text fontSize='sm' fontWeight='semibold'>
 						SKILLS
 					</Text>
 					<Separator w='100%' variant='solid' />
@@ -215,7 +215,7 @@ function CVTemplate({ personalData, printRef }: any) {
 								<Progress.Root key={skill.name} min={0} max={100} value={skill.value} animated colorPalette='green' variant='outline' size='sm' shape='rounded'>
 									<Progress.Label>{skill.name}</Progress.Label>
 									<HStack>
-										<Progress.Track flex='1' shadow='lg'>
+										<Progress.Track flex='1'>
 											<Progress.Range />
 										</Progress.Track>
 										<Progress.ValueText>{skill.value}%</Progress.ValueText>
@@ -225,7 +225,7 @@ function CVTemplate({ personalData, printRef }: any) {
 					</SimpleGrid>
 				</VStack>
 				<VStack w='100%' alignItems='start' mt={3}>
-					<Text fontSize='sm' fontFamily='Work_Sans_SemiBold'>
+					<Text fontSize='sm' fontWeight='semibold'>
 						LANGUAGES
 					</Text>
 					<Separator w='100%' variant='solid' />
@@ -235,7 +235,7 @@ function CVTemplate({ personalData, printRef }: any) {
 								<Progress.Root key={language.name} min={0} max={100} value={language.value} colorPalette='green' variant='outline' size='sm' shape='rounded'>
 									<Progress.Label>{language.name}</Progress.Label>
 									<HStack>
-										<Progress.Track flex='1' shadow='lg'>
+										<Progress.Track flex='1'>
 											<Progress.Range />
 										</Progress.Track>
 										<Progress.ValueText>{language.value}%</Progress.ValueText>
