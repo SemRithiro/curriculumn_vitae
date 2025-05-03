@@ -7,15 +7,22 @@ import Profile from '../assets/imgs/profile.jpg';
 import { personal_curriculumn_vitae as pcv } from '../constants/data';
 
 export default function Index() {
+	function animateProgress(target: number) {
+		// for (const i = 0; i <= target; i++) {
+		// 	console.log(i);
+		// }
+		return target;
+	}
+
 	return (
-		<Flex w='100%' justifyContent='center' p='5'>
-			<Flex flexDirection={{ base: 'column', sm: 'row' }} bgColor='white' w='210mm' borderRadius='md' shadow='2xl'>
-				<VStack w={{ base: '100%', sm: '70mm' }} bgColor='#434244' p='5'>
-					<Image h='40mm' aspectRatio='square' src={Profile} borderRadius='50%' mt='2' />
+		<Flex w='100%' justifyContent='start' alignItems='center' flexDirection={{ base: 'row', sm: 'column' }} p='5' gapY={4}>
+			<Flex className='a4-paper' flexDirection={{ base: 'column', sm: 'row' }} bgColor='white' w='210mm' minH='270mm' borderRadius='md' shadow='2xl'>
+				<VStack className='info' w={{ base: '100%', sm: '70mm' }} bgColor='#434244' p='5' gap={1}>
+					<Image h='40mm' aspectRatio='square' src={Profile} borderRadius='50%' mt='2' shadow='lg' />
 					<VStack w='100%' align='start' mt='3'>
 						<Text color='white'>ABOUT ME</Text>
-						<Text color='white' fontSize='sm'>
-							Spring Boot API, JS Frameworks (Node and React) and Python Dev.
+						<Text color='white' fontSize='xs'>
+							{pcv.about_me}
 						</Text>
 					</VStack>
 					<Separator w='100%' variant='solid' />
@@ -46,16 +53,19 @@ export default function Index() {
 					<VStack w='100%' align='start' mt='3'>
 						<Text color='white'>HOBBIES</Text>
 						<List.Root ml='5'>
-							<List.Item>
-								<Text color='white' fontSize='sm'>
-									Inventing
-								</Text>
-							</List.Item>
+							{pcv.hobbies.length > 0 &&
+								pcv.hobbies.map((hobbie) => (
+									<List.Item>
+										<Text color='white' fontSize='sm'>
+											{hobbie}
+										</Text>
+									</List.Item>
+								))}
 						</List.Root>
 					</VStack>
 				</VStack>
-				<VStack flex='1' p='5'>
-					<HStack flexDirection={{ base: 'column', sm: 'row' }} w='100%' alignContent='space-between' mt='7'>
+				<VStack className='detail' flex='1' p='5' gap={0}>
+					<HStack flexDirection={{ base: 'column', sm: 'row' }} w='100%' alignContent='space-between' mt={{ base: '0', sm: '7' }}>
 						<VStack flex='1.5' w='100%' alignItems='start' gap='0'>
 							<Text fontFamily='Oswald-regular' fontSize='2xl'>
 								{pcv.first_name.toUpperCase()}
@@ -78,17 +88,21 @@ export default function Index() {
 								<Icon>
 									<MdPhone size={15} color='gray' />
 								</Icon>
-								<Text fontSize='sm'>{pcv.telephone}</Text>
+								<Link fontSize='sm' href={`tel:+855${pcv.telephone.startsWith('0') ? pcv.telephone.substring(1).replaceAll(' ', '') : pcv.telephone.replaceAll(' ', '')}`}>
+									{pcv.telephone}
+								</Link>
 							</HStack>
 							<HStack>
 								<Icon>
 									<IoIosMail size={15} color='gray' />
 								</Icon>
-								<Text fontSize='sm'>{pcv.email}</Text>
+								<Link fontSize='sm' href={`mailto:${pcv.email}`}>
+									{pcv.email}
+								</Link>
 							</HStack>
 						</VStack>
 					</HStack>
-					<VStack w='100%' alignItems='start' mt='5'>
+					<VStack w='100%' alignItems='start' mt={3} gap={2}>
 						<Text fontSize='sm' fontFamily='Work_Sans_SemiBold'>
 							WORK EXPERENCE
 						</Text>
@@ -100,7 +114,7 @@ export default function Index() {
 										<Timeline.Separator />
 										<Timeline.Indicator scale={0.5}></Timeline.Indicator>
 									</Timeline.Connector>
-									<Timeline.Content width='auto'>
+									<Timeline.Content width='auto' gap={0}>
 										<Timeline.Title>{experience.position}</Timeline.Title>
 										<Timeline.Description>
 											{experience.company} | {experience.duration}
@@ -119,7 +133,7 @@ export default function Index() {
 							))}
 						</Timeline.Root>
 					</VStack>
-					<VStack w='100%' alignItems='start'>
+					<VStack w='100%' alignItems='start' gap={2}>
 						<Text fontSize='sm' fontFamily='Work_Sans_SemiBold'>
 							EDUCATION
 						</Text>
@@ -131,7 +145,7 @@ export default function Index() {
 										<Timeline.Separator />
 										<Timeline.Indicator scale={0.5}></Timeline.Indicator>
 									</Timeline.Connector>
-									<Timeline.Content width='auto'>
+									<Timeline.Content width='auto' gap={0}>
 										<Timeline.Title>{education.degree}</Timeline.Title>
 										<Timeline.Description>
 											{education.school} | {education.duration}
@@ -146,14 +160,17 @@ export default function Index() {
 							SKILLS
 						</Text>
 						<Separator w='100%' variant='solid' />
-						<SimpleGrid w='100%' columns={{ base: 1, sm: 2 }} gap={4}>
+						<SimpleGrid w='100%' columns={{ base: 1, sm: 2 }} gapX={4} gapY={1}>
 							{pcv.skills.length > 0 &&
 								pcv.skills.map((skill) => (
-									<Progress.Root min={0} max={100} value={skill.value} colorPalette='green' variant='outline' size='sm' shape='rounded'>
+									<Progress.Root min={0} max={100} value={animateProgress(skill.value)} animated colorPalette='green' variant='outline' size='sm' shape='rounded'>
 										<Progress.Label>{skill.name}</Progress.Label>
-										<Progress.Track>
-											<Progress.Range />
-										</Progress.Track>
+										<HStack>
+											<Progress.Track flex='1' shadow='lg'>
+												<Progress.Range />
+											</Progress.Track>
+											<Progress.ValueText>{skill.value}%</Progress.ValueText>
+										</HStack>
 									</Progress.Root>
 								))}
 						</SimpleGrid>
@@ -163,14 +180,17 @@ export default function Index() {
 							LANGUAGES
 						</Text>
 						<Separator w='100%' variant='solid' />
-						<SimpleGrid w='100%' columns={{ base: 1, sm: 2 }} gap='4'>
+						<SimpleGrid w='100%' columns={{ base: 1, sm: 2 }} gapX={4} gapY={1}>
 							{pcv.languages.length > 0 &&
 								pcv.languages.map((language) => (
 									<Progress.Root min={0} max={100} value={language.value} colorPalette='green' variant='outline' size='sm' shape='rounded'>
 										<Progress.Label>{language.name}</Progress.Label>
-										<Progress.Track>
-											<Progress.Range />
-										</Progress.Track>
+										<HStack>
+											<Progress.Track flex='1' shadow='lg'>
+												<Progress.Range />
+											</Progress.Track>
+											<Progress.ValueText>{language.value}%</Progress.ValueText>
+										</HStack>
 									</Progress.Root>
 								))}
 						</SimpleGrid>
