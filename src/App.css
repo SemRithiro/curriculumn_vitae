@@ -48,6 +48,6 @@
     animation: scale-in 1.5s ease-out forwards;
 }
 
-.print-button {
+.action-button {
   animation: move-left 0.8s ease-out forwards;
 }
