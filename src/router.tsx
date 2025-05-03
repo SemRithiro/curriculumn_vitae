@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Index from './views';
 
 export default function Router() {
@@ -8,6 +8,8 @@ export default function Router() {
 		<BrowserRouter basename='/curriculumn_vitae'>
 			<Routes>
 				<Route path='/' element={<Index />} />
+
+				<Route path='*' element={<Navigate to='/' />} />
 			</Routes>
 		</BrowserRouter>
 	);

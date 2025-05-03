@@ -4,7 +4,17 @@
     padding: 1rem;
 }
 
-@keyframes scal-in {
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  .a4-print {
+    display: flex !important;
+  }
+}
+
+@keyframes scale-in {
   from {
     transform: scale(1.1);
     opacity: 0;
@@ -15,15 +25,29 @@
   }
 }
 
+@keyframes move-left {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
 .a4-paper {
-    animation: scal-in 0.5s ease-out forwards;
+    animation: scale-in 0.5s ease-out forwards;
 }
 
-.a4-paper>.info, .detail {
-    animation: scal-in 0.8s ease-out forwards;
+.a4-paper>.info, .a4-paper>.detail {
+    animation: scale-in 0.8s ease-out forwards;
 }
 
-.a4-paper>.info>*, .detail>* {
-    animation: scal-in 1.5s ease-out forwards;
+.a4-paper>.info>*, .a4-paper>.detail>* {
+    animation: scale-in 1.5s ease-out forwards;
+}
 
+.print-button {
+  animation: move-left 0.8s ease-out forwards;
 }

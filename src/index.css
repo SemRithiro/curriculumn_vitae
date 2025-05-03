@@ -1,28 +1,28 @@
-@font-face {
+/* @font-face {
   font-family: "Work_Sans";
-  src: url(./assets/fonts/Work_Sans/static/WorkSans-Regular.ttf);
+  src: url('/fonts/Work_Sans/static/WorkSans-Regular.ttf');
 }
 
 @font-face {
   font-family: "Work_Sans_SemiBold";
-  src: url(./assets/fonts/Work_Sans/static/WorkSans-SemiBold.ttf);
+  src: url('/fonts/Work_Sans/static/WorkSans-SemiBold.ttf');
 }
 
 @font-face {
   font-family: "Work_Sans_ExtraBold";
-  src: url(./assets/fonts/Work_Sans/static/WorkSans-ExtraBold.ttf);
+  src: url('/fonts/Work_Sans/static/WorkSans-ExtraBold.ttf');
 }
 
 @font-face {
   font-family: "Suwannaphum-regular";
-  src: url(./assets/fonts/Suwannaphum/Suwannaphum-Regular.ttf);
+  src: url('/fonts/Suwannaphum/Suwannaphum-Regular.ttf');
 }
 
 @font-face {
   font-family: "Oswald-regular";
-  src: url(./assets/fonts/Oswald/static/Oswald-Regular.ttf);
-}
+  src: url('/fonts/Oswald/static/Oswald-Regular.ttf');
+} */
 
 body {
-  background-color: #666666;
+  background-color: #5D5B5E;
 }

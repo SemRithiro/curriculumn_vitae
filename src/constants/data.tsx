@@ -1,4 +1,6 @@
-const personal_curriculumn_vitae = {
+import { personalData } from '@/types';
+
+const personal_curriculumn_vitae: personalData = {
 	first_name: 'Sem',
 	last_name: 'Rithiro',
 	address: 'Prey Sa, Dangkor, Phnom Penh, Cambodia.',

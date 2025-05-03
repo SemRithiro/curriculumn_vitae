@@ -4,8 +4,8 @@ export const system = createSystem(defaultConfig, {
 	theme: {
 		tokens: {
 			fonts: {
-				heading: { value: `'Work_Sans', Suwannaphum-regular` },
-				body: { value: `'Work_Sans', Suwannaphum-regular` },
+				heading: { value: `'Work Sans', 'Oswald' !important` },
+				body: { value: `'Work Sans', 'Oswald' !important` },
 			},
 			cursor: {
 				button: { value: 'pointer' },
