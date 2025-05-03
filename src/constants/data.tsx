@@ -5,7 +5,7 @@ const personal_curriculumn_vitae = {
 	telephone: '086 577 787',
 	email: 'rithiro@gmail.com',
 	about_me:
-		'Passionate software engineer with 5+ years of experience in full-stack development using React, Node.JS, Python and Java. Skilled at building scalable APIs and optimizing system performance. Known for problem-solving, clean architecture, and leading small dev teams. Currently focused on cloud-native solution and automation.',
+		'Full-stack developer with 5+ years of experience in ReactJS, Node.js, Spring Boot, and Python. Skilled in building scalable APIs, real-time systems, and secure architectures. Focused on cloud-native solutions, automation, and driving innovation through clean, efficient code and team leadership.',
 	public_link: [
 		{ name: 'GitHub', url: 'https://github.com/SemRithiro' },
 		{ name: 'Linkin', url: 'https://www.linkedin.com/in/rithirosem' },
@@ -15,7 +15,7 @@ const personal_curriculumn_vitae = {
 		{
 			company: 'UDAYA Technology',
 			position: 'Senior R&D and Product Management',
-			duration: 'December 2025 - Present',
+			duration: 'December 2024 - Present',
 			responsibility: ['API Development with Spring Boot', 'Design real-time project architecture', 'Mentoring essential skills to development teams', 'Planning and coordinating MVP product'],
 		},
 		{
