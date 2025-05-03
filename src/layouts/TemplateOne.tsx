@@ -53,17 +53,6 @@ export default function TemplateOne({ personalData, printRef, profile }: any) {
 				</VStack>
 				<Separator w='100%' variant='solid' />
 				<VStack w='100%' align='start' mt='3' pr={5}>
-					<Text color='white'>REFERENCE</Text>
-					{personalData.references.length > 0 ? (
-						<Text></Text>
-					) : (
-						<Text color='white' fontSize='sm'>
-							Available if needed.
-						</Text>
-					)}
-				</VStack>
-				<Separator w='100%' variant='solid' />
-				<VStack w='100%' align='start' mt='3' pr={5}>
 					<Text color='white'>HOBBIES</Text>
 					<List.Root ml='5'>
 						{personalData.hobbies.length > 0 &&
@@ -96,6 +85,17 @@ export default function TemplateOne({ personalData, printRef, profile }: any) {
 								</List.Item>
 							))}
 					</List.Root>
+				</VStack>
+				<Separator w='100%' variant='solid' />
+				<VStack w='100%' align='start' mt='3' pr={5}>
+					<Text color='white'>REFERENCE</Text>
+					{personalData.references.length > 0 ? (
+						<Text></Text>
+					) : (
+						<Text color='white' fontSize='sm'>
+							Available if needed.
+						</Text>
+					)}
 				</VStack>
 			</VStack>
 			<VStack className='detail' w={!printRef ? { base: '100%', sm: '140mm' } : '140mm'} p='5' gap={0}>
