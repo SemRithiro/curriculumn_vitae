@@ -4,7 +4,7 @@ import { useReactToPrint } from 'react-to-print';
 import { RiContactsBook3Fill } from 'react-icons/ri';
 import { TiPrinter } from 'react-icons/ti';
 
-import Profile from '../assets/imgs/profile.jpg';
+import Profile from '../assets/imgs/profile_1.jpg';
 
 import { Tooltip } from '../components/ui/tooltip';
 import { personal_curriculumn_vitae } from '../constants/data';

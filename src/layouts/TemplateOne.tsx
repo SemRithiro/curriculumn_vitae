@@ -29,7 +29,7 @@ export default function TemplateOne({ personalData, printRef, profile }: any) {
 			shadow='2xl'
 		>
 			<VStack className='info' w={!printRef ? { base: '100%', sm: '70mm' } : '70mm'} bgColor='#434244' p='5' gap={1}>
-				<Image h='40mm' aspectRatio='square' src={profile} border='4px solid white' borderRadius='50%' mt='2' shadow='lg' />
+				<Image h='40mm' aspectRatio='square' src={profile} border='4px solid white' borderRadius='50%' mt='2' shadow='lg' objectFit='cover' />
 				<VStack w='100%' align='start' mt='3'>
 					<Text color='white'>ABOUT ME</Text>
 					<Text color='white' fontSize='xs'>
