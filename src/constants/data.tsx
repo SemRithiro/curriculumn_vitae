@@ -46,12 +46,12 @@ const personal_curriculumn_vitae: personalData = {
 	technical_skills: [
 		{ name: 'Java', value: 85 },
 		{ name: 'Javascript', value: 85 },
-		{ name: 'Typescript', value: 75 },
-		{ name: 'Python', value: 90 },
+		{ name: 'Typescript', value: 70 },
+		{ name: 'Python', value: 70 },
 		{ name: 'GitHub', value: 60 },
-		{ name: 'Docker', value: 70 },
-		{ name: 'SQL', value: 75 },
-		{ name: 'Shell Script', value: 60 },
+		{ name: 'Docker', value: 50 },
+		{ name: 'SQL', value: 70 },
+		{ name: 'Shell Script', value: 50 },
 	],
 	soft_skils: [
 		{ name: 'Problem solving', value: 90 },
