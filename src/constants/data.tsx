@@ -7,7 +7,7 @@ const personal_curriculumn_vitae: personalData = {
 	telephone: '086 577 787',
 	email: 'rithiro@gmail.com',
 	about_me:
-		'Full-stack developer with 5+ years of experience in Spring Boot, ReactJS, Node.js, and Python. Skilled in building scalable APIs, real-time systems, and secure architectures. Focused on cloud-native solutions, automation, and driving innovation through clean, efficient code and team leadership.',
+		'I’m a full-stack developer with over five years of experience working with Spring Boot, ReactJS, Node.js, and Python. I focus on building robust, secure, and scalable APIs, as well as real-time systems. I have a growing understanding of Spring Cloud, Kubernetes, Kafka, and microservices architecture, and I’m eager to apply these technologies more deeply in real-world projects. I’m passionate about writing clean, efficient code, driving automation, and contributing to collaborative, high-performing teams.',
 	public_link: [
 		{ name: 'GitHub', url: 'https://github.com/SemRithiro' },
 		{ name: 'Linkin', url: 'https://www.linkedin.com/in/rithirosem' },
@@ -19,9 +19,10 @@ const personal_curriculumn_vitae: personalData = {
 			position: 'Senior R&D and Product Management',
 			duration: 'December 2023 - Present',
 			responsibility: [
-				'Building modern and secure API using Spring Boot',
+				'Building modern using Spring Boot following best practices',
+				'Secure API using Keycloak, JWT, and security headers',
 				'Designing real-time project architectures',
-				'Developing automated scripts to update real-time data',
+				'Developing automated scripts to update real-time data with Python',
 				'Mentoring development team on essential skills',
 				'Planning and coordinating MVP product development',
 			],
@@ -42,6 +43,11 @@ const personal_curriculumn_vitae: personalData = {
 	education: [
 		{ school: 'Royal University of Phnom Penh', degree: 'Bachelor degree of Computer Science', duration: '2014-2019' },
 		{ school: 'Chea Sim Samaki High School', degree: 'High school deploma', duration: '2011-2014' },
+	],
+	training: [
+		{ school: 'UDAYA Technology', degree: 'Project Management (WBS Project)', duration: 'January-2025' },
+		{ school: 'UDAYA Technology', degree: 'Microservice Level 1&2', duration: 'June-2024' },
+		{ school: 'UDAYA Technology', degree: 'Database Administrator', duration: 'January-2024' },
 	],
 	technical_skills: [
 		{ name: 'Java', value: 85 },

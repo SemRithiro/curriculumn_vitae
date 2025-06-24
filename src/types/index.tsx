@@ -31,6 +31,7 @@ export type personalData = {
 	public_link: public_link[];
 	work_experience: work_experience[];
 	education: education[];
+	training: education[];
 	technical_skills: nameValue[];
 	soft_skils: nameValue[];
 	languages: nameValue[];

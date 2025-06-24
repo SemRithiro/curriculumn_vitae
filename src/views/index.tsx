@@ -25,8 +25,7 @@ export default function Index() {
 			N:${personal_curriculumn_vitae.first_name};${personal_curriculumn_vitae.last_name};;;
 			FN:${personal_curriculumn_vitae.first_name}
 			LN:${personal_curriculumn_vitae.last_name}
-			TEL;TYPE=CELL:+855${
-				personal_curriculumn_vitae.telephone.startsWith('0') ? personal_curriculumn_vitae.telephone.substring(1).replaceAll(' ', '') : personal_curriculumn_vitae.telephone.replaceAll(' ', '')
+			TEL;TYPE=CELL:+855${personal_curriculumn_vitae.telephone.startsWith('0') ? personal_curriculumn_vitae.telephone.substring(1).replaceAll(' ', '') : personal_curriculumn_vitae.telephone.replaceAll(' ', '')
 			}
 			EMAIL:${personal_curriculumn_vitae.email}
 			TITLE:${personal_curriculumn_vitae.work_experience[0].position}

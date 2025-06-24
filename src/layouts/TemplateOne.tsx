@@ -143,7 +143,7 @@ export default function TemplateOne({ personalData, printRef, profile }: any) {
 						</HStack>
 					</VStack>
 				</HStack>
-				<VStack w='100%' alignItems='start' mt={3} gap={2}>
+				<VStack w='100%' alignItems='start' mt={1} gap={1}>
 					<Text fontSize='sm' fontWeight={'semibold'}>
 						WORK EXPERENCE
 					</Text>
@@ -155,7 +155,7 @@ export default function TemplateOne({ personalData, printRef, profile }: any) {
 									<Timeline.Separator />
 									<Timeline.Indicator scale={0.5}></Timeline.Indicator>
 								</Timeline.Connector>
-								<Timeline.Content width='auto' gap={0}>
+								<Timeline.Content width='auto' gap={0} pb={'5px'}>
 									<Timeline.Title>{experience.position}</Timeline.Title>
 									<Timeline.Description>
 										{experience.company} | {experience.duration}
@@ -174,7 +174,29 @@ export default function TemplateOne({ personalData, printRef, profile }: any) {
 						))}
 					</Timeline.Root>
 				</VStack>
-				<VStack w='100%' alignItems='start' gap={2}>
+				<VStack w='100%' alignItems='start' gap={1} >
+					<Text fontSize='sm' fontWeight={'semibold'}>
+						TRAINING
+					</Text>
+					<Separator w='100%' variant='solid' />
+					<Timeline.Root size='md'>
+						{personalData.training.map((education: education) => (
+							<Timeline.Item key={education.school}>
+								<Timeline.Connector>
+									<Timeline.Separator />
+									<Timeline.Indicator scale={0.5}></Timeline.Indicator>
+								</Timeline.Connector>
+								<Timeline.Content width='auto' gap={0} pb={'5px'}>
+									<Timeline.Title>{education.degree}</Timeline.Title>
+									<Timeline.Description>
+										{education.school} | {education.duration}
+									</Timeline.Description>
+								</Timeline.Content>
+							</Timeline.Item>
+						))}
+					</Timeline.Root>
+				</VStack>
+				<VStack w='100%' alignItems='start' gap={1}>
 					<Text fontSize='sm' fontWeight={'semibold'}>
 						EDUCATION
 					</Text>
@@ -186,7 +208,7 @@ export default function TemplateOne({ personalData, printRef, profile }: any) {
 									<Timeline.Separator />
 									<Timeline.Indicator scale={0.5}></Timeline.Indicator>
 								</Timeline.Connector>
-								<Timeline.Content width='auto' gap={0}>
+								<Timeline.Content width='auto' gap={0} pb={'5px'}>
 									<Timeline.Title>{education.degree}</Timeline.Title>
 									<Timeline.Description>
 										{education.school} | {education.duration}
@@ -201,7 +223,7 @@ export default function TemplateOne({ personalData, printRef, profile }: any) {
 						TECHNICAL SKILLS
 					</Text>
 					<Separator w='100%' variant='solid' />
-					<SimpleGrid w='100%' columns={!printRef ? { base: 1, sm: 2 } : 2} gapX={4} gapY={1}>
+					<SimpleGrid w='100%' columns={!printRef ? { base: 1, sm: 2 } : 2} gapX={4} gapY={0.5}>
 						{personalData.technical_skills.length > 0 &&
 							personalData.technical_skills.map((skill: nameValue) => (
 								<Progress.Root key={skill.name} min={0} max={100} value={skill.value} animated colorPalette='green' variant='outline' size='sm' shape='rounded'>
@@ -216,12 +238,12 @@ export default function TemplateOne({ personalData, printRef, profile }: any) {
 							))}
 					</SimpleGrid>
 				</VStack>
-				<VStack w='100%' alignItems='start' mt={3}>
+				<VStack w='100%' alignItems='start' mt={1}>
 					<Text fontSize='sm' fontWeight='semibold'>
 						SOFT SKILLS
 					</Text>
 					<Separator w='100%' variant='solid' />
-					<SimpleGrid w='100%' columns={!printRef ? { base: 1, sm: 2 } : 2} gapX={4} gapY={1}>
+					<SimpleGrid w='100%' columns={!printRef ? { base: 1, sm: 2 } : 2} gapX={4} gapY={0.5}>
 						{personalData.soft_skils.length > 0 &&
 							personalData.soft_skils.map((skill: nameValue) => (
 								<Progress.Root key={skill.name} min={0} max={100} value={skill.value} colorPalette='green' variant='outline' size='sm' shape='rounded'>
@@ -237,6 +259,6 @@ export default function TemplateOne({ personalData, printRef, profile }: any) {
 					</SimpleGrid>
 				</VStack>
 			</VStack>
-		</Flex>
+		</Flex >
 	);
 }
