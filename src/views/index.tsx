@@ -38,7 +38,7 @@ export default function Index() {
 
 		const a = document.createElement('a');
 		a.href = url;
-		a.download = 'John_Doe.vcf';
+		a.download = 'Sem_Rithiro.vcf';
 		a.click();
 
 		URL.revokeObjectURL(url);
