@@ -7,7 +7,7 @@ const personal_curriculumn_vitae: personalData = {
 	telephone: '086 577 787',
 	email: 'rithiro@gmail.com',
 	about_me:
-		'Full-stack developer with 5+ years of experience in ReactJS, Node.js, Spring Boot, and Python. Skilled in building scalable APIs, real-time systems, and secure architectures. Focused on cloud-native solutions, automation, and driving innovation through clean, efficient code and team leadership.',
+		'Full-stack developer with 5+ years of experience in Spring Boot, ReactJS, Node.js, and Python. Skilled in building scalable APIs, real-time systems, and secure architectures. Focused on cloud-native solutions, automation, and driving innovation through clean, efficient code and team leadership.',
 	public_link: [
 		{ name: 'GitHub', url: 'https://github.com/SemRithiro' },
 		{ name: 'Linkin', url: 'https://www.linkedin.com/in/rithirosem' },
@@ -17,19 +17,19 @@ const personal_curriculumn_vitae: personalData = {
 		{
 			company: 'UDAYA Technology',
 			position: 'Senior R&D and Product Management',
-			duration: 'December 2024 - Present',
+			duration: 'December 2023 - Present',
 			responsibility: [
-				'API Development using Spring Boot',
+				'Building modern and secure API using Spring Boot',
 				'Designing real-time project architectures',
 				'Developing automated scripts to update real-time data',
-				'Mentoring development teams on essential skills',
+				'Mentoring development team on essential skills',
 				'Planning and coordinating MVP product development',
 			],
 		},
 		{
 			company: 'UDAYA Technology',
 			position: 'IOT Developer',
-			duration: 'April 2019 - December 2024',
+			duration: 'April 2019 - December 2023',
 			responsibility: [
 				'Frontend development using ReactJS',
 				'Embedded programming with Arduino and ESP',
