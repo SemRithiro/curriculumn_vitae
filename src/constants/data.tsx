@@ -19,7 +19,7 @@ const personal_curriculumn_vitae: personalData = {
 			position: 'Senior R&D and Product Management',
 			duration: 'December 2023 - Present',
 			responsibility: [
-				'Building modern using Spring Boot following best practices',
+				'Building modern API using Spring Boot following best practices',
 				'Secure API using Keycloak, JWT, and security headers',
 				'Designing real-time project architectures',
 				'Developing automated scripts to update real-time data with Python',
